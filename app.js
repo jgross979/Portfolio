@@ -31,8 +31,8 @@ $(function(){
     });
 
   $('.bot_pic').click(function(){
-    $(this).find('h2').toggleClass('hidden')
-    $(this).toggleClass('under')
+    $(this).find('div').toggleClass('hidden')
+    $(this).toggleClass('under pixel')
   })
 
   });

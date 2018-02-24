@@ -30,12 +30,8 @@ object, video{
 }
 .hidden{
   opacity: 0;
-  transition: 1.5s;
 }
 
-.appear{
-  opacity: 1;
-}
 
 
 #heading {
@@ -75,6 +71,7 @@ object, video{
   transition: 0.5s;
   display: inline-block;
   border-radius: 15%;
+  background: white;
   padding: 5px;
 }
 
@@ -113,7 +110,7 @@ object, video{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 15px auto;
 }
 .bot_pic {
@@ -121,20 +118,57 @@ object, video{
   height: 300px;
   margin: 8vh 20px;
   background: #3b635f;
+  border-radius: 5px;
   overflow: hidden;
   transition: 1.5s;
   cursor: pointer;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+
+
+.pixel{
+  background: url('images/pixelart.png') no-repeat center center;
+  background-size: 250px 300px;
+  transition: 0.5s;
+}
+
+.pixel:hover{
+  opacity: 0.5;
+  transition: 3.5;
 }
 
 .under{
-  background-color: rgba(15, 97, 130, 0.35);
+  background: rgba(15, 97, 130, 0.35);
   z-index: 3;
+  padding: 5px;
+  border: 2px solid;
+}
+
+.info{
+  font-size: 18px;
+  text-align: left;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 3px;
+  background: #efe6db;
+}
+.logos{
+  width: 100%;
+  text-align: center;
+}
+.logo{
+  height: 32px;
+  width: 32px;
+  margin: 0 15px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .mid-text{
   margin: 20% 15%;
 }
-p{
+p.mid-text{
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 25px;
