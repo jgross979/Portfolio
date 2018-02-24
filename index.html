@@ -3,25 +3,67 @@
   <head>
     <title>Portfolio</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
     <link href = 'style.css' type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src= "app.js"></script>
   </head>
   <body>
-    <div id = "grid">
+    <!-- NAV BAR -->
+    <img class = "nav-bars" src = "images/hamburger.png" alt="nav-icon">
+    <nav class = "nav">
+      <div class = "links">
+        <a class="nav-link" href="#page-top">About Me</a>
+        <a class="nav-link" href="#page-mid">Contact</a>
+        <a class="nav-link" href="#page-bot">Projects</a>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT  -->
+    <div id = "container">
       <div id = "page-top" class = '1'>
-        <h1 id= "heading">My Portfolio</h1>
+        <div id=heading>
+          <h1 class = "title">Portfolio</h1>
+          <h2 class = "title hidden">by Jared Gross</h2>
+        </div>
+        <div class = "social-links">
+            <a href = "https://github.com/jgross979" target="_blank">
+              <img class = "social git" src="images/github.png" alt="github logo">
+            </a>
+            <a href = "https://www.linkedin.com/in/jared-gross-9747aabb" target="_blank">
+              <img class = "social linkedin" src="images/linkedin.png" alt="linkedin logo">
+            </a>
+            <a href = "#" target="_blank">
+              <img class = "social resume" src="images/resume.png" alt="resume logo">
+            </a>
+        </div>
       </div>
       <div id = "page-mid" class = '2'>
-        <div class = "mid-text">
-          <p>This is a page meant to represent everything that I have
+          <p class = "mid-text">This is a page meant to represent everything that I have
           accomplished as a "self-taught" developer. Through hard-work and
            perserverence, I believe that anything is possible. I am sure that
           my own hardwork will produce the results that I am looking for. </p>
-        </div>
       </div>
       <div id = "page-bot" class = '3'>
-        2
+        <h1 class="section-title">Projects</h1>
+        <div id = "projects">
+          <div class = "bot_pic">
+            <h2 class = "hidden">LEMON</h2>
+          </div>
+          <div class = "bot_pic">
+            <h2 class = "hidden">LEMON</h2>
+          </div>
+          <div class = "bot_pic">
+            <h2 class = "hidden">LEMON</h2>
+          </div>
+          <div class = "bot_pic">
+            <h2 class = "hidden">LEMON</h2>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
   </body>
 </html>
