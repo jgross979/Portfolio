@@ -24,7 +24,7 @@ $(function(){
     $('nav').toggleClass('open close')
     if($('nav').hasClass('open') && $(window).width()>999 || $(window).width() <= 400){
       $('#container').css('width', '100%');
-    }else{
+    }else if($(window).width()>999){
       $('#container').css('width', $(window).width() - 185+'px');
     }
     e.stopPropagation();
