@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: #efebeb;
 }
 img, embed,
 object, video{
@@ -11,7 +12,7 @@ object, video{
   position:relative;
 }
 #page-top {
-  background-image: url("images/computerbanner.jpeg");
+  background-image: url("images/computerbanner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background: #466362; */
@@ -147,7 +148,7 @@ nav {
   position: fixed;
   transform: translate(-300px, 0);
   transition: transform 0.3s ease;
-  background: grey;
+  background: #39393A;
   opacity: 0.95;
   z-index: 2;
 }
@@ -181,11 +182,12 @@ nav.open {
   font-family: 'Libre Franklin', sans-serif;
   cursor: pointer;
   transition: 0.25s;
-  color: black;
+  color: white;
 }
 
 .nav-link:hover{
   background:white;
+  color: black;
 }
 
 
@@ -193,6 +195,7 @@ nav.open {
   nav.open{
     width: 100%;
     text-align: center;
+    opacity: 1;
   }
   .nav-link{
     border-top: 2px black solid;
