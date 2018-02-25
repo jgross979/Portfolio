@@ -6,6 +6,7 @@ img, embed,
 object, video{
   max-width: 100%
 }
+
 #container{
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +37,7 @@ object, video{
 
 #heading {
     position: relative;
-    margin: auto;;
+    margin: auto;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -93,6 +94,14 @@ object, video{
   order: 2;
   width: 100%;
 }
+.mid-text{
+  margin: 20% 15%;
+}
+p.mid-text{
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 25px;
+}
 
 #page-bot {
   background: #C5D5E4;
@@ -103,8 +112,15 @@ object, video{
 .section-title{
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
-
+  font-size: 48px;
+  font-weight: 300;
+  border: 3px solid;
+  border-radius: 5px;
+  margin: 15px auto;
+  width: 85%;
 }
+
+
 
 #projects{
   display: flex;
@@ -125,8 +141,6 @@ object, video{
   font-family: 'Libre Franklin', sans-serif;
 }
 
-
-
 .pixel{
   background: url('images/pixelart.png') no-repeat center center;
   background-size: 250px 300px;
@@ -136,6 +150,12 @@ object, video{
 .pixel:hover{
   opacity: 0.5;
   transition: 3.5;
+}
+
+.responsive-design{
+  background: url('images/responsive-designs.png') no-repeat center center;
+  background-size: 250px 300px;
+  transition: 0.5s;
 }
 
 .under{
@@ -165,14 +185,6 @@ object, video{
   border-radius: 5px;
 }
 
-.mid-text{
-  margin: 20% 15%;
-}
-p.mid-text{
-  text-align: center;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 25px;
-}
 
 
 /*------NAV BAR---------*/
@@ -250,15 +262,5 @@ nav.open {
     float: right;
   }
 
-  #page-top{
-    order:2;
-
-  }
-  #page-mid{
-    order:3;
-  }
-  #page-bot{
-    order:4;
-  }
 
 }

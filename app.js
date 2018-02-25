@@ -4,6 +4,7 @@ $(function(){
     if($(window).width()>999){
       $('#container').css('width', $(window).width() - 185+'px');
     }
+    $('#page-top').css('height', $(window).height())
   });
   $(window).resize(function(){
     if($(window).width()>999 && !$('nav').hasClass('open')){
@@ -29,7 +30,7 @@ $(function(){
     }
     e.stopPropagation();
     });
-
+//-----Project card reveal -------//
   $('.bot_pic').click(function(){
     $(this).find('div').toggleClass('hidden')
     $(this).toggleClass('under pixel')
