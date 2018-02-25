@@ -33,7 +33,8 @@ $(function(){
 //-----Project card reveal -------//
   $('.bot_pic').click(function(){
     $(this).find('div').toggleClass('hidden')
-    $(this).toggleClass('under pixel')
-  })
+    $(this).toggleClass('under card')
+    $(this).find('img.project-image').toggleClass('hidden')
+    })
 
   });

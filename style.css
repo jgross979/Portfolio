@@ -31,6 +31,8 @@ object, video{
 }
 .hidden{
   opacity: 0;
+  z-index: -1;
+
 }
 
 
@@ -141,21 +143,20 @@ p.mid-text{
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.pixel{
-  background: url('images/pixelart.png') no-repeat center center;
+.card{
+  /* background: url('images/pixelart.png') no-repeat center center; */
   background-size: 250px 300px;
   transition: 0.5s;
 }
 
-.pixel:hover{
+.card:hover{
   opacity: 0.5;
   transition: 3.5;
 }
 
-.responsive-design{
-  background: url('images/responsive-designs.png') no-repeat center center;
-  background-size: 250px 300px;
-  transition: 0.5s;
+.project-image{
+  position: absolute;
+  border-radius: 5px;
 }
 
 .under{
@@ -183,7 +184,9 @@ p.mid-text{
   margin: 0 15px;
   padding: 5px;
   border-radius: 5px;
+  z-index: 2;
 }
+
 
 
 
